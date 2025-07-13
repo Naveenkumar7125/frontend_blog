@@ -1,0 +1,104 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #f8faff, #dbeafe);
+  min-height: 100vh;
+}
+
+.app {
+  padding: 30px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.form input,
+.form textarea {
+  padding: 12px;
+  border: 1px solid #93c5fd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.form button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form button:hover {
+  background-color: #1e40af;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #ffffff;
+  transition: box-shadow 0.2s ease;
+}
+
+.post:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.post h2 {
+  color: #1d4ed8;
+  margin-bottom: 10px;
+}
+
+.post p {
+  color: #374151;
+  line-height: 1.6;
+}
+
+.timestamp {
+  font-size: 0.8em;
+  color: #6b7280;
+  display: block;
+  margin-top: 12px;
+  text-align: right;
+}
+
+.no-posts {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+}
