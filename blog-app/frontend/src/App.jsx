@@ -14,7 +14,7 @@ export default function App() {
 
   const fetchPosts = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/posts");
+      const res = await axios.get("https://backend-blog-5bvt.onrender.com/api/posts");
       setPosts(res.data);
     } catch (error) {
       console.error("Error fetching posts:", error);
@@ -24,7 +24,7 @@ export default function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/posts", { title, content });
+      await axios.post("https://backend-blog-5bvt.onrender.com/api/posts", { title, content });
       setTitle("");
       setContent("");
       fetchPosts();
